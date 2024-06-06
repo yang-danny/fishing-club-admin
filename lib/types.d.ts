@@ -83,5 +83,5 @@ type EventType = {
   funder:string;
   media: [string];
   body: string;
- 
+  createdAt: Date;
 };
