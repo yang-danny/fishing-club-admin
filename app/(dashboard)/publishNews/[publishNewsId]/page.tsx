@@ -2,8 +2,8 @@
 import Loader from '@/components/custom ui/Loader'
 import React, { useEffect, useState } from 'react'
 import PublishNewsForm from '@/components/news/PublishNewsForm'
-const publishNewsDetails = ({ params }: { params: { publishNewsId: string }}) => {
-    const [loading, setLoading] = useState(true)
+const PublishNewsDetails = ({ params }: { params: { publishNewsId: string }}) => {
+    const [loading, setLoading] = useState<boolean>(true)
     const [publishNewsDetails, setPublishNewsDetails] = useState<PublishNewsType | null>(null)
     const getPublishNewsDetails = async () => {
         try { 
@@ -26,4 +26,4 @@ const publishNewsDetails = ({ params }: { params: { publishNewsId: string }}) =>
       )
 }
 
-export default publishNewsDetails
+export default PublishNewsDetails
