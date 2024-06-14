@@ -26,8 +26,9 @@ export const GET = async (
       status: 200,
       headers: {
         "Access-Control-Allow-Origin": `${process.env.FRONT_END_URL}`,
-        "Access-Control-Allow-Methods": "GET",
-        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
     });
   } catch (err) {
